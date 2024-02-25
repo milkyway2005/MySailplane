@@ -41,14 +41,14 @@ li:hover{
 li:hover .delete_img{
 	opacity: 1.0;
 }
-input:checked + .text > span{
+.line{
 	text-decoration: line-through;
 }
 input[type='checkbox']{
 	opacity: 0;
 }
-ol > li.done{
-	background-color: #9c9aa6;
+.done{
+	background-color: #9c9aa6 !important;
 }
 input[type="text"]{
 	font-size: 20px;

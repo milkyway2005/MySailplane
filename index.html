@@ -15,69 +15,27 @@
 					<img src="images/favicon.png">
 					<h1>Список дел</h1>
 				</div>
-				<form class="header">
-					<input type="text" placeholder="Новый элемент списка"/>
+				<form id="form" class="header">
+					<input id="text_new" type="text" placeholder="Новый элемент списка"/>
 					<button id="add_button" type="submit" class="main_button">Создать</button>
-					<button id="clean_button" class="main_button">Очистить всё</button>
+					<button id="clean_button" type="reset" class="main_button">Очистить всё</button>
 				</form>
 			</div>
 			
 			<div id="content">
 				<div id="none_todo" class="none">Не найдено ни одного дела</div>	
-				<div id="all_todos" >
-					<ol>
-						<li class="done">
-							<div class="note">
-								<input class="checkbox" type="checkbox" id="checkbox1" checked="checked">
-								<label class="text" for="checkbox1">
-									<span>Сделать что-то очень очень очень очень важное</span>
-									<sub>от 11.02.2024</sub>
-								</label>
-							</div>
-							<img class="delete_img" src="images/cross.svg">
-						</li>
-						<li>
-							<div class="note">
-								<input class="checkbox" type="checkbox" id="checkbox2">
-								<label class="text" for="checkbox2">
-									<span>Ещё что-то</span>
-									<sub>от 11.02.2024</sub>
-								</label>
-							</div>
-							<img class="delete_img" src="images/cross.svg">
-						</li>
-						<li>
-							<div class="note">
-								<input class="checkbox" type="checkbox" id="checkbox3">
-								<label class="text" for="checkbox3">
-									<span>И ещё</span>
-									<sub>от 11.02.2024</sub>
-								</label>
-							</div>
-							<img class="delete_img" src="images/cross.svg">
-						</li>
-						<li>
-							<div class="note">
-								<input class="checkbox" type="checkbox" id="checkbox4">
-								<label class="text" for="checkbox4">
-									<span>И ещё</span>
-									<sub>от 11.02.2024</sub>
-								</label>
-							</div>
-							<img class="delete_img" src="images/cross.svg">
-						</li>
-						<li>
-							<div class="note">
-								<input class="checkbox" type="checkbox" id="checkbox4">
-								<label class="text" for="checkbox4">
-									<span>И ещё</span>
-									<sub>от 11.02.2024</sub>
-								</label>
-							</div>
-							<img class="delete_img" src="images/cross.svg">
-						</li>
-					</ol>
-				</div>
+				<ol id="all_todos">
+					<li class="todo">
+						<div class="note">
+							<input class="checkbox" type="checkbox">
+							<label class="text">
+								<span>Сделать что-то очень важное</span>
+								<sub>от 11.2.2024</sub>
+							</label>
+						</div>
+						<img class="delete_img" src="images/cross.svg">
+					</li>
+				</ol>
 			</div>
 		</div>
 		
@@ -85,5 +43,7 @@
 			<hr>
 			<p class="text_footer">Copyright &copy;</p>
 		</div>
+		
+		<script src="script.js"></script>
 	</body>
 </html>
