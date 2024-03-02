@@ -50,6 +50,10 @@ input[type='checkbox']{
 .done{
 	background-color: #9c9aa6 !important;
 }
+.selected_sort{
+	font-size: 21px;
+	font-weight:700;
+}
 input[type="text"]{
 	font-size: 20px;
 	width: 50%;
@@ -129,13 +133,58 @@ input[type="text"]{
 	width: 60%;
 	margin: 0 auto;
 	overflow-y: auto;
-	height: 40%;
+	max-height: 40%;
 	margin-top: 20px;
 }
 #none_todo{
 	text-align: center;
 	padding: 30px;
 	font-size: 24px;
+}
+#sort{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+#sort span{
+	font-size: 20px;
+}
+#sort span:hover{
+	font-size: 21px;
+	font-weight:700;
+}
+#all_sort_group{
+	display: flex;
+	flex-direction: row;
+}
+#img_sort{
+	width: 30px;
+	height: 30px;
+}
+#img_sort:hover{
+	width: 32px;
+	height: 32px;
+}
+#done_sort, #undone_sort, #all_sort{
+	align-self: center;
+}
+#sorting_items{
+	background-color: #f3dbcf;
+	padding: 5px;
+	position: absolute;
+	right: -120px;
+	top: 20px;
+}
+#sorting_items div{
+	margin: 5px;
+	font-size: 16px;
+}
+#sorting_items div:hover{
+	text-decoration: underline;
 }
 #footer{
 	position: absolute;
